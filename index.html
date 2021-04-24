@@ -1,57 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vamos por Alitas</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <title>Document</title>
 </head>
-<style>
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
-    body{
-        background: #f2F2F2;
-    }
-    .contenedor {
-        margin: auto;
-        width: 900px;
-        margin-top: 300px;
-        text-align: center;
-    }
-    .titulo{
-        margin-bottom: 20px;
-    }
-    .opciones p {
-        background: #ffa02a;
-        display: initial;
-        padding: 12px;
-        color: #ffffff;
-        border-radius: 2px;
-        font-weight: bold;
-    }
-    p.p1 {
-        position: absolute;
-        top: 400px;
-        left: 609px;
-        width: 100px;
-    }
-    p.p2{
-        position: absolute;
-        top: 400px;
-        left: 800px;
-        width: 100px;
-    }
-    #si {
-        background: #515050;
-        left: 420px;position: absolute;
+<body>
+    <style>
+        *{
+margin: 0 px;
+padding: 0 px;
+
+}
+body{
+    background: #f2f2f2;;
+}
+
+.contenedor {
+    margin: auto;
+    width: 500px;
+    margin-top: 150px;
+    text-align: center;
+}
+.titulo {
+    margin-bottom: 25px;
+}
+
+.opciones p {
+    background: rgb(219, 95, 6);
+    display: initial;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+p.p1 {
+    position: absolute;
+    
+    width: 100px;
+}
+p.p2 {
+   position: absolute;
+   left: 500px;
+
+    width: 100px;
+}
+
+#si {
+    background: lightseagreen;
+
+    left: 420px;
+    position: absolute;
         top: 122px;
         width: 550px;
         color: #ffffff;
         padding: 50px;
         display: none;
-    }
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+}
+    </style>
+   
+    <div class="contenedor">
+        <div class="titulo">
+        <h1>OYEE!! Salgamos a cenar y escuchar tu musica favorita</h1>
+        </div>
+
+        <div class="opciones">
+            <p class="p1">NO</p>
+            <p onclick="dijoSi()" class="p2">SI</p>
+        </div>
+        <div id="si">
+            <h2>Yo sabia que si, solo queda que sonrias y me envies whatsapp </h2>
+        </div>
+        
+        
+    
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $(".p1").hover(function(){
@@ -65,20 +94,5 @@ function dijoSi(){
     document.getElementById("si").style.display = "block";
 }
 </script>
-<body>
-<div class="contenedor">
-    <div class="titulo">
-        <h1> OYEEE!  VIANEY! <3 ¿VAMOS POR UNOS ALITAS?</h1>
-    </div>
-    <div class="opciones">
-        <p class="p1">SI</p>
-        <p onclick="dijoSi()" class="p2">NO</p>
-        <div id="si">    
-            <h2> ¿Por que diste que no?</h2>
-                <h2>YO QUERIA IR CONTIGO A LOS ALITAS  </3
-                </h2>
-        </div>
-    </div>
-</div>
 </body>
 </html>
