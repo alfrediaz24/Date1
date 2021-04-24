@@ -19,9 +19,9 @@ body{
 }
 
 .contenedor {
-    margin: auto;
-    width: 500px;
-    margin-top: 150px;
+    margin: left;
+    width: 400px;
+    margin-top: 100px;
     text-align: center;
 }
 .titulo {
@@ -39,12 +39,12 @@ body{
 
 p.p1 {
     position: absolute;
-    
+    left: 50px;
     width: 100px;
 }
 p.p2 {
    position: absolute;
-   left: 500px;
+   left: 190px;
 
     width: 100px;
 }
@@ -84,8 +84,8 @@ p.p2 {
 <script>
 $(document).ready(function(){
   $(".p1").hover(function(){
-      arriba =  Math.random() * (400 - 1) + 1;
-      abajo =  Math.random() * (609 - 1) + 1;
+      arriba =  Math.random() * (100 - 1) + 1;
+      abajo =  Math.random() * (150 - 1) + 1;
     $(this).css("top", arriba);
     $(this).css("left", abajo);
     });
