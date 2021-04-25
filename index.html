@@ -37,6 +37,15 @@ body{
     font-weight: bold;
 }
 
+.sisi {
+    background: rgb(219, 95, 6);
+    display: initial;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
 p.p1 {
     position: absolute;
     left: 50px;
@@ -55,7 +64,7 @@ p.p2 {
     left: 10px;
     position: absolute;
         top: 70px;
-        width: 350px;
+        width: 400px;
         color: #ffffff;
         padding: 50px;
         display: none;
@@ -65,7 +74,7 @@ p.p2 {
    
     <div class="contenedor">
         <div class="titulo">
-        <h1>OYEE!! Guapa!! <3-Salgamos a cenar y escuchar tu musica favorita</h1>
+        <h1>OYEE!! Salgamos a cenar y escuchar tu musica favorita</h1>
         </div>
 
         <div class="opciones">
@@ -73,7 +82,8 @@ p.p2 {
             <p onclick="dijoSi()" class="p2">SI</p>
         </div>
         <div id="si">
-            <h2>Yo sabia que si, solo queda que sonrias y me confirmes en whatsapp </h2>
+            <h2>Yo sabia que si, te ves linda sonriendo </h2>
+            <a href="https://wa.me/524424858189?text=Me%20encantaria%20salir%20contigo%20<3%20" class="sisi">CLICK</a>
         </div>
         
         
@@ -84,8 +94,8 @@ p.p2 {
 <script>
 $(document).ready(function(){
   $(".p1").hover(function(){
-      arriba =  Math.random() * (150 - 1) + 1;
-      abajo =  Math.random() * (250 - 1) + 1;
+      arriba =  Math.random() * (100 - 1) + 1;
+      abajo =  Math.random() * (150 - 1) + 1;
     $(this).css("top", arriba);
     $(this).css("left", abajo);
     });
